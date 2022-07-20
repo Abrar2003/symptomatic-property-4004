@@ -889,13 +889,6 @@ gallaryDisplay(data)
 //<----------------- For Event for Image Hover  ---------------->
 
 
-let gallary_div=document.querySelectorAll(".gallary-div")
-for(let i=0;i<gallary_div.length;i++){
-    gallary_div[i].addEventListener('mouseover', (event) => {
-        // gallary_div[i].style. backgroundColor = "red";
-        console.log("hi")
-    });
-}
 
 
 
