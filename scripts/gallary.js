@@ -1,3 +1,8 @@
+// import {navbar,navjs,cross,features}  from "../components/navbar.js"
+// document.getElementById("gallary-navbar").innerHTML = navbar()
+// navjs()
+// cross()
+// features()
 
 //<----------------- Backend Data for Append  ---------------->
 

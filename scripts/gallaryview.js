@@ -1,4 +1,11 @@
 
+// import {navbar,navjs,cross,features}  from "../components/navbar.js"
+// document.getElementById("gallary-view-navbar").innerHTML = navbar()
+// navjs()
+// cross()
+// features()
+
+
 let GallaryData=JSON.parse(localStorage.getItem("gallaryimg"))
 console.log(GallaryData.poster)
 
