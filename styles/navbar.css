@@ -12,6 +12,8 @@
     justify-content:space-evenly;
     color: white;
     gap: 30px;
+    position: sticky;
+    top: 0px;
     /* margin: auto; */
     margin-top: 0;
     /* display: none; */
