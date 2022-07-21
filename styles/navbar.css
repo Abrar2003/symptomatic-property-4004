@@ -12,6 +12,8 @@
     justify-content:space-evenly;
     color: white;
     gap: 30px;
+    position: sticky;
+    top: 0px;
     /* margin: auto; */
     margin-top: 0;
     /* display: none; */
@@ -284,9 +286,6 @@ cursor: pointer;
   #features1>h4:hover>span{
     color:rgb(79, 197, 243)
   }
- #features>h4{
-    font-weight: 100;
- }
  #options>a{
 font-weight: 100;
  }
