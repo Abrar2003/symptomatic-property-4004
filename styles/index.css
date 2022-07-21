@@ -1,0 +1,218 @@
+#banner{
+    height: 700px;
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   /* margin-top: 20px; */
+   /* padding:70px ; */
+}
+.hero-right{
+    width: 80%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-top: 60px;
+}
+.hero-right>img{
+    width: 100%;
+    height: 90%;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* width: 60%; */
+
+}
+.comm-logo-head{
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 00px 0px 110px;
+}
+.comm-logo-head+p{
+    padding-left: 110px;
+    font-size: 18px;
+    width:90%;
+    margin-top: 20px;
+}
+/* .hero-right{
+ pading-left: 110px;
+} */
+.btn-container{
+    margin-left: 110px;
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+.btn-container>a:first-child{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(138, 96, 236) ;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.btn-container>a:last-child{
+    text-decoration: none;
+        color:black;
+        border: 1px solid rgb(138, 96, 236);
+        /* background-color: rgb(138, 96, 236); */
+        width: 300px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+}
+.btn-container>a:first-child:hover{
+background-color: rgb(173, 138, 255)
+}
+.btn-container>a:last-child:hover{
+    background-color: rgb(136, 89, 247)
+}
+.b2{
+    height: 300px;
+    /* width: 1500px; */
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 100px;
+    margin: 20px 0px;
+}
+.b2>p{
+    display: flex;
+    text-align: center;
+    /* margin-top: 40px; */
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.b2>.logos{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.b2>.logos>l>img{
+    width: 90px;
+    height: 90px;
+}
+#beautiful{
+    padding: 100px;
+    height: 900px;
+}
+#evan{
+text-align: center;
+font-size: 20px;
+margin-bottom: 30px;
+}
+#beautiful-browser{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+/* .sidebar>img{
+    width: 100px;
+    height: 100px;
+} */
+.screen{
+    /* width: 600px; */
+
+    display: flex;
+    /* grid-template-columns: repeat(2); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* padding-left: 250; */
+    /* margin-left: 250px; */
+    /* border: 1px solid red; */
+}
+.si>img{
+    width: 100%;
+    /* height: 100px; */
+}
+.desktop>img{
+    width:150%;
+    /* height: 100px; */
+}
+.callout{
+    display: grid;
+    justify-content: center;
+    margin: 40px;
+}
+.callout>p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    /* width: 300px; */
+    /* margin-right: -60px; */
+}
+#cccc{
+    color: white;
+    margin: 30px;
+    margin-left: -90px;
+   
+}
+#cccc:hover{
+    background-color: rgb(173, 138, 255)
+}
+.copy>ul{
+    display: grid;
+    gap: 10px;
+}
+#timerReveal{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    margin-top: 30px;
+}
+#tim{
+    display: flex;
+    /* background-image: url("https: //www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/sms-vector-bg-no-dots.svg?ver=298"); */
+    /* background-image: url(); */
+    width: 50%;
+}
+#tim>img{
+    width: 100%;
+}
+#tim>img:last-child{
+  
+}
+.smsRev{
+/* width:50%;
+height: 60%;
+margin-left: -120px;
+margin-top:40px; */
+width: 70%;
+height: 90%;
+margin-left: -700px;
+
+}
+.smsReveal_content{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+   
+}
+.smsReveal_content>div>h3{
+    font-size: 25px;
+    line-height: 60px;
+}
+.smsReveal_content>div{
+width: 50%;
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+margin-top: 100px;
+}
+.cmb{
+    text-decoration: none;
+    
+}
