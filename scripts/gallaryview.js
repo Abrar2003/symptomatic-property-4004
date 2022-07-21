@@ -1,3 +1,6 @@
+//<----------------------Navbar And Footer Export------------------------------------>
+
+
 import {navbar,navjs,cross,features}  from "../components/navbar.js"
 console.log("hello")
 // document.getElementById("navbar1").style.backgroundColor="red"
@@ -6,6 +9,12 @@ navjs()
 cross()
 features()
 
+import{footer} from "../components/footer.js"
+// console.log("hello")
+document.getElementById("footer").innerHTML = footer();
+
+
+//<---------------------------Gallay------------------------------------------>
 
 let GallaryData=JSON.parse(localStorage.getItem("gallaryimg"))
 console.log(GallaryData.poster)

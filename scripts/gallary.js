@@ -1,3 +1,6 @@
+
+//<-------------------------NavBar And Fotter export------------------------------------------>
+
 import {navbar,navjs,cross,features}  from "../components/navbar.js"
 console.log("hello")
 // document.getElementById("navbar1").style.backgroundColor="red"
@@ -5,6 +8,12 @@ document.getElementById("navbar1").innerHTML = navbar()
 navjs()
 cross()
 features()
+
+import{footer} from "../components/footer.js"
+// console.log("hello")
+document.getElementById("footer").innerHTML = footer();
+
+
 
 //<----------------- Backend Data for Append  ---------------->
 

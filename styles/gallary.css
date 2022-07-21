@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.blank{
+    margin-top: 5%;
+}
 .intro-div{
     margin-bottom: 3%;
     padding: 6%;
