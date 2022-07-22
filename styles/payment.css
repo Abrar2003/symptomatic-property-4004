@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#pay-card{
+    display:none;
+    position: absolute;
+    width: 50%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1%;
+    top: 5%;
+    border-radius: 20px;
+
+}
+.pay-card-form>h2,.pay-card-form>p{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.pay-card-number{
+    width: 100%;
+    padding: 2%;
+}
+.pay-card-exp-main{
+    width: 100%;
+}
+.pay-card-exp{
+    padding: 2%;
+    width: 30%;
+    margin: 1%;
+}
+.pay-card-name{
+    width: 100%;
+    padding: 2%;
+}
+#pay_card_country,#pay_bank_card{
+    width: 100%;
+    padding: 2%;
+}
+
+.pay-add-card-btn{
+    width: 20%;
+    padding: 2% 5%;
+    margin-left: 1%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.pay-div{
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.pay-amount-div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(192, 181, 181, 0.669);
+}
+.day-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.day-total>div{
+    font-size: 24px;
+}
+.pay-card-title{
+    margin-top: 5%;
+}
+.pay-summary{
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.pay-total-2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+#pay-start-plan{
+    width: 100%;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    background-color: #428cf494;
+    border: 0;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+#pay-start-plan:hover{
+    cursor: pointer;
+    background-color: #3677cbdd;
+}
+#pay-add-card{
+    text-align: center;
+    width: 100%;
+    padding: 4% 5%;
+    background-color: rgba(188, 174, 174, 0.212);
+    border-radius: 15px;
+    text-decoration: underline;
+    color: #428CF4;
+    cursor: pointer;
+}
+.pay-discount{
+    color: #61962B;
+    font-weight: bold;
+    margin-top:8%;
+    margin-bottom: 8%;
+}
+.pay-discount+p{
+    margin-bottom: 10%;
+}
+
+
+/*<-----------------------Bank INfo------------------------------------->*/
+#pay-div-bank{
+    padding: 2%;
+    border-bottom:2px solid rgba(128, 128, 128, 0.411);
+    margin-top: 2%;
+}
+.bankInfo{
+    display: flex;
+    margin-top: 2%;
+    gap: 4%;
+}
+.bankInfo>p{
+   font-weight: bold;
+}
+.bankInfo>p+p{
+    font-weight: bold;
+    color: teal;
+}
+
+
+/*<-----------------------------------------Server Connecting------------------------------------------>*/
+#server_connecting{
+    display:none;
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    text-align: center;
+    
+    
+
+}
+#server_connecting>img{
+    width: 100%;
+
+}
+
+
+/*<----------------OTP Formation---------------------->*/
+
+#pay-otp{
+    display:none;
+    position: absolute;
+    width: 50%;
+    top: 9%;
+    left: 25%;
+    background-color:white ; 
+    padding: 18% 3%;
+
+}
+
+#checkOtp {
+    background-color: #faa619;
+    color: white;
+    border: none;
+    display: none;
+  }
+  .otpContainer > #verifyOtpForm > input {
+    width: 65px;
+    height: 42px;
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 10px;
+    font: 18px sans-serif;
+    text-align: center;
+    border: 1px solid #92939154;
+  }
+  .otpContainer > input[type="text"]:focus {
+    border: 1px solid #faa619;
+  }
+  .mobile_number > span + span {
+    color: #faa619;
+    font: 600 16px sans-serif;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #pay_otp_form>h3,#pay_otp_form>p,#pay_otp_form>input{
+    margin-top: 5%;
+  }
+  .mobile_number{
+    margin-bottom: 5%;
+  }
+
+  /*<-------------------------------Counter--------------------------------->*/
+  #pay-offer{
+    display: flex;
+    gap:10px;
+  }
