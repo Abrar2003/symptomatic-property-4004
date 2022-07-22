@@ -1,8 +1,9 @@
 let navbar = () => {
     let login = localStorage.getItem('log') || false;
-    // login = true;
+    login = true;
   if(login==false)  {
-        return `
+      return `
+<div id="navbar1">
       <div id="logo">
                 <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt=""/>
                 <h1>Campaing Monitor</h1>
@@ -118,8 +119,53 @@ let navbar = () => {
                 <a href="#">Sales</a>
                 <a href="#">Try  it free</a>
             </div>
+        </div>
         </div>`}
-    else{return ``}
+    else{return ` <div id="nav2">
+            <div  id="main-nav2">
+               <a aria-label="home" class="cmds-header-direct-logo" href="#">
+                    <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt="">
+                </a>
+               <a class="cmds-site-navigation__link"
+                        href="#" title="Overview"><span>Overview</span></a>
+                <a class="cmds-site-navigation__link"
+                        href="#" title="Campaigns"><span>Campaigns</span></a>
+               <a class="cmds-site-navigation__link"
+                        href="#" title="Automation"><span>Automation</span></a>
+               <a class="cmds-site-navigation__link"
+                        href="#"
+                        title="Transactional"><span>Transactional</span></a>
+               <a class="cmds-site-navigation__link"
+                        href="#" title="Lists &amp; subscribers"><span>Lists &amp;
+                            subscribers</span></a></l>
+                <a class="cmds-site-navigation__link"
+                        href="#" title="Insights"><span>Insights</span></a>
+                <a class="cmds-site-navigation__link"
+                        href="#" title="Integrations"><span>Integrations</span></a>
+            </div>
+        
+        <nav aria-label="MyAccount navigation" id="acc">
+            
+                <l><a class="cmds-header__pill"
+                        href="#">View Plans</a>
+                </l>
+               <l>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscSc9C-eNLyH-rVg7077mcQcrfXIDjAd_XQ&usqp=CAU" alt="">
+               </l>
+               <l>
+                <!-- <div> -->
+                <h3 id="usename"></h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWKm9ewt97xp3BtV-wo8DBVXYt_7l92MZ4Q&usqp=CAU" alt="">
+                    <!-- </div> -->
+                    <!-- <div></div>
+                    <div></div> -->
+            </l>
+                   
+                    </div>
+               
+            
+        </nav>
+    </div>`}
 }
  function navjs() {
     //  document.getElementById('slide-bar').style.display = 'flex'

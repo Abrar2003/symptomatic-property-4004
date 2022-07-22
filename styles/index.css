@@ -67,6 +67,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 5px;
+            color: rgb(147, 123, 255);
 }
 .btn-container>a:first-child:hover{
 background-color: rgb(173, 138, 255)
@@ -169,16 +170,21 @@ margin-bottom: 30px;
     /* display: grid;
     grid-template-columns: repeat(2,1fr); */
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    background-color:whitesmoke;
+    height: 700px;
 }
 #tim{
     display: flex;
     /* background-image: url("https: //www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/sms-vector-bg-no-dots.svg?ver=298"); */
     /* background-image: url(); */
     width: 50%;
+    /* height: 100%; */
 }
 #tim>img{
     width: 100%;
+    height: 100%;
+    
 }
 #tim>img:last-child{
   
@@ -190,29 +196,238 @@ margin-left: -120px;
 margin-top:40px; */
 width: 70%;
 height: 90%;
-margin-left: -700px;
+margin-left: -650px;
+margin-top: 0px;
 
 }
 .smsReveal_content{
     width: 50%;
+    /* height: 150%; */
     height: 50%;
     display: flex;
     flex-direction: column;
     padding: 30px;
+    /* border:  solid red; */
    
 }
 .smsReveal_content>div>h3{
-    font-size: 25px;
-    line-height: 60px;
+    font-size: 30px;
+    /* line-height: 60px; */
 }
 .smsReveal_content>div{
+    display: grid;
 width: 50%;
 justify-content: center;
 align-items: center;
 margin-left: 100px;
 margin-top: 100px;
+gap: 30px;
 }
-.cmb{
+.smsReveal_content>div>p{
+margin-bottom: 100px;
+}
+#cccc1{
+    display: flex;
     text-decoration: none;
+    color: white;
+    background-color: rgb(134, 85, 247);
+    width: 150px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red; */
+    /* padding: 30px; */
+    /* margin-top: 1000px; */
+    margin-top: -100px;
+}
+#cccc1:hover{
+    background-color: rgb(147, 123, 255);
+}
+#b3{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    gap:10%;
+    /* background-color: whitesmoke; */
+    margin: 20px 0px;
+}
+#b3img{
+    display: grid;
+    height: 90%;
+    grid-template-columns: repeat(3,1fr);
+    padding:0px 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: -100px;
+    margin-top: 10px;
+    gap: 20px;
+    background-color: bisque;
+}
+#b3img>img{
+    width: 100%;
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* height: 50%; */
+}
+/* #b3img>div{
+    display: flex;
+}
+#b3img>div>img{
+    width: 50%;
+} */
+.copy1{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap:15px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height: 80%;
+margin-top: 25px;
+background-color: rgb(222, 245, 255);
+}
+.copy>h3{
+    font-size: 30px;
+   
+}
+.copy1>a{
+    text-decoration: none;
+        color: black;
+        border: 1px solid rgb(138, 96, 236);
+        /* background-color: rgb(138, 96, 236); */
+        width: 250px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: rgb(147, 123, 255);
+        font-weight: bold;
+}
+.copy1>a:hover {
+    background-color: rgb(147, 123, 255);
+    color: white;
     
 }
+/* #b456{
+    width: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-clip: border-box;
+    /* background-image: url("https: //campaignmonitor.com//wp-content/themes/cm-theme/assets/images/heroes/banner-ripcurl.jpg"); */
+
+/* background-color: yellowgreen; */
+ /* border: solid red;
+}*/
+#b456>div{
+    width: 70%;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    padding: 110px;
+    font-size: 25px;
+    line-height: 45px;
+} 
+#b456{
+    /* width: 1440px; */
+        margin: auto;
+        background-image: url(https://campaignmonitor.com//wp-content/themes/cm-theme/assets/images/heroes/banner-ripcurl.jpg);
+        background-color: #af0000;
+        background-position: center;
+        background-size: cover;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        background-color: black;
+        /* opacity: 1.5; */
+}
+#b456>div>p:first-child{
+    margin-top: -30px;
+}
+#b456>div>p:nth-child(2){
+    font-size: 20px;
+}
+#white{
+background-color: white;
+margin-left: -110px;
+font-size: 15px;
+}
+#white:hover{
+    background-color: transparent;
+    border:.5px white solid;
+    color: white;
+}
+
+#mobile{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 550px;
+    padding: 110px;
+ 
+}
+.overflow>img{
+width: 80%;
+}
+.copy3{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+    line-height: 45px;
+}
+.copy3>h3{
+    font-size: 40px;
+}
+.copy3>p>{
+    font-size: 20px;
+}
+#cc{
+    display: flex;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(134, 85, 247);
+        width: 200px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        
+}
+#cc:hover{
+    background-color: rgb(128, 139, 225);
+}
+#b98{
+    background-image: url(https://campaignmonitor.com//wp-content/themes/cm-theme/assets/images/home/thegist-bg.jpg);
+    background-position: center;
+        background-size: cover;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+    
+}
+#b98>div{
+    width: 100%;
+    height: 400px;
+    padding: 90px 110px;
+    margin-top:30px ;
+}
+#lid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+    padding: 200px;
+    gap: 30px;
+    color: white;
+    background: rgb(58, 132, 180);
+        background: linear-gradient(90deg, rgba(58, 132, 180, 1) 0%, rgba(83, 201, 210, 1) 49%, rgba(69, 202, 252, 1) 100%);
+}
+/* #lid>:nth-child(all){
+    color: #af0000;
+} */
