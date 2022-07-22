@@ -912,6 +912,3 @@ gallaryDisplay(data)
 
 
 
-
-
-

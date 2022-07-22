@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+*::-webkit-scrollbar {
+
+    display: none;
+
+}
 .blank{
     margin-top: 5%;
 }
@@ -101,24 +106,32 @@
 }
 .gallary-main-div{
     background-color: rgba(230, 228, 228, 0.664);
+    /* position:fixed; */
+    top:0;
+    width:100%;
+    z-index:100;
 
 }
 #gallary-main-div-1{
     display: grid;
-   
     grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
     width: 75%;
+    height: 1000px;
+    overflow: scroll;
     margin: auto;
-
+    /* border: 3px solid; */
+  
+  
 }
 #gallary-main-div-1>div{
     margin-top: 10%;
     margin-left: 10%;
+ 
 }
 
 #gallary-main-div-1>div>img{
-    position: relative;
+
     width: 100%;
 }
 .gallary-div{

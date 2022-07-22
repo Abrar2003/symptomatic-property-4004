@@ -117,65 +117,6 @@ let serverConnecting =()=>{
 
 
 
-// <--------------------------------OTP formation-------------------------------------------------------------------->
-
-
-let otp = Math.floor(Math.random()*100000);
-
-let verifyOtp = ()=>{
-    event.preventDefault()
-    let otpInputs = document.querySelectorAll(".otpContainer>#verifyOtpForm>.pass");
-    // console.log('otpInputs:', otpInputs)
-    let bag = '';
-    for(let i=0 ; i<otpInputs.length ; i++){
-        bag += otpInputs[i].value;
-    }
-    if(otp == bag ){
-        alert("OTP verified connecting to bank server")
-        serverConnecting()
-
-    }else{
-        alert("Wrong Otp")
-        genrateOtp();
-    }
-}
-
-let genrateOtp = ()=>{
-    
-   alert(`Your one time password is ${otp}`)
-   let first_input = document.getElementById("first_input")
-   first_input.focus()
-    let verifyOtpForm = document.getElementById('verifyOtpForm'); 
-    verifyOtpForm.addEventListener('submit',verifyOtp);
-    
-}
-
-
-let StartPlans=document.getElementById("pay-start-plan").addEventListener("click",function(){
-
-    setTimeout(function(){
-        genrateOtp()
-
-    },1500)
-    pay_otp.style.display="block"
-    body.style.backgroundColor="rgba(214, 199, 199, 0.689)"  
-}
-)
-
-let moveNext = document.getElementsByClassName('pass')
-Array.from(moveNext).forEach((el)=>{
-  el.addEventListener("keyup",(event)=> {
-    // Number 13 is the "Enter" key on the keyboard
-    if (event.keyCode === 13 || el.value.length == 1) {
-      // Focus on the next sibling
-      el.nextElementSibling.focus()
-    }
-  })
-})
-
-
-
-
 //<-----------------------------------Payment Counter----------------------------------------------------->
 
 let payoffer_1=document.getElementById("pay-offer-1")
@@ -248,3 +189,68 @@ let total=payAmount*offer/100
 
 last_amount.innerText=`${payAmount-total} $ `
 pay_discount.innerText=`${total} % discount applied`
+
+
+
+// <--------------------------------OTP formation-------------------------------------------------------------------->
+
+
+let otp = Math.floor(Math.random()*100000);
+
+let verifyOtp = ()=>{
+    event.preventDefault()
+    let otpInputs = document.querySelectorAll(".otpContainer>#verifyOtpForm>.pass");
+    // console.log('otpInputs:', otpInputs)
+    let bag = '';
+    for(let i=0 ; i<otpInputs.length ; i++){
+        bag += otpInputs[i].value;
+    }
+    if(otp == bag ){
+        alert("OTP verified connecting to bank server")
+        serverConnecting()
+
+    }else{
+        alert("Wrong Otp")
+        genrateOtp();
+    }
+}
+
+let genrateOtp = ()=>{
+    
+   alert(`Your one time password is ${otp}`)
+   let first_input = document.getElementById("first_input")
+   first_input.focus()
+    let verifyOtpForm = document.getElementById('verifyOtpForm'); 
+    verifyOtpForm.addEventListener('submit',verifyOtp);
+    
+}
+
+
+let StartPlans=document.getElementById("pay-start-plan").addEventListener("click",function(){
+
+if((payAmount-total)!==0){
+    setTimeout(function(){
+        genrateOtp()
+
+    },2000)
+    pay_otp.style.display="block"
+    body.style.backgroundColor="rgba(214, 199, 199, 0.689)" 
+}else{
+    alert("Please Select plan First")
+}
+})
+
+let moveNext = document.getElementsByClassName('pass')
+Array.from(moveNext).forEach((el)=>{
+  el.addEventListener("keyup",(event)=> {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13 || el.value.length == 1) {
+      // Focus on the next sibling
+      el.nextElementSibling.focus()
+    }
+  })
+})
+
+
+
+
