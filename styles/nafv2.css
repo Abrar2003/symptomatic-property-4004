@@ -1,0 +1,112 @@
+#nav2{
+    height: 60px;
+    background-color: #171a33;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 50% 35%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        justify-content: space-between;
+}
+#main-nav2{
+    height: 100%;
+    display:flex;
+    gap: 5%;
+}
+#main-nav2>a{
+    height:60px;
+    /* display: flex; */
+        /* align-items: center; */
+}
+#main-nav2 a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(218, 232, 251);
+    /* height: 100%; */
+    /* border: 1px solid red; */
+     height: 60px; 
+     /* padding:20px 0px 10px 0px;  */
+     /* text-align: center; */
+     justify-content: center;
+     align-items: center;
+     font-weight: 100;
+     font-size: 12px;
+
+    
+}
+#main-nav2 a:hover{
+    color: white;
+}
+ #main-nav2>a>img:first-child{
+    width: 40px; 
+    width: 40px; 
+}
+#acc{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    /* border: solid red; */
+    color: white;
+    gap: 10px;
+    justify-content: right;
+}
+#acc>l>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: end;
+}
+.cmds-header__pill{
+    color: aliceblue;
+    /* width: 30px; */
+    height: 25px;
+    background-color: rgb(109, 63, 216);
+    font-size: 12px;
+    padding: 0px 15px;
+    border-radius: 30px;
+
+}
+.cmds-header__pill:hover{
+    background-color: rgb(161, 134, 223);
+}
+#acc>l:last-child{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10%;
+    
+}
+#acc>l:last-child>h3{
+    font-size: 15px;
+    font-weight: 100;
+}
+#acc>l>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: .5;
+    
+}
+#acc>l>img:hover{
+    opacity: 1;
+    border:1px solid rgb(218, 232, 251);
+    padding: 2px ;
+}
+#acc>l:last-child>div:first-child{
+    display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10%;
+
+}
+#acc>l:last-child>div:first-child>h3{
+    font-size: 15px;
+        font-weight: 100;
+}
+#helll{
+    /* background-color: red;
+    height: 500px;
+    margin-top: 30px; */
+}
