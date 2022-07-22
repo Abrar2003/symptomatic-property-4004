@@ -1,8 +1,11 @@
 import { navbar, navjs, cross, features } from "../components/navbar.js";
+import {footer} from "../components/footer.js";
 document.getElementById("navbar1").innerHTML = navbar();
 navjs();
 cross();
 features();
+document.querySelector('#footer').innerHTML = footer();
+
 let range = () => {
   let contacts_value = document.getElementById("range").value;
   let contacts_num = document.querySelector("h3>div");
