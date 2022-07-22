@@ -1,304 +1,288 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-#navbar1{
-    width: 100%;
-    height: 80px;
-    background-color: #171a33;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    color: white;
-    gap: 30px;
-    position: sticky;
-    top: 0px;
-    /* margin: auto; */
-    padding: 0% 12%;
-    /* display: none; */
-    /* border: solid; */
-    position: fixed;
+#navbar1 {
+  width: 100%;
+  height: 80px;
+  background-color: #171a33;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  gap: 30px;
+  position: sticky;
+  top: 0px;
+  margin: auto;
+  padding: 0% 12%;
+  /* display: none; */
+  /* border: solid; */
+  position: fixed;
 }
 #navbar2 {
-    width: 100%;
-    height: 80px;
-    background-color: #111324;
-    display: none;
+  width: 100%;
+  height: 80px;
+  background-color: #111324;
+  display: none;
 }
-#logo{
-    text-decoration: none;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
+#logo {
+  text-decoration: none;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
 }
-#logo>a{
-    width: 100%;
-    color: white;
-    display: flex;
-    gap: 20px;
-    text-decoration: none;
+#logo > a {
+  width: 100%;
+  color: white;
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
 }
-#logo>a>img{
-    width: 35px;
+#logo > a > img {
+  width: 35px;
 }
-#features{
-   
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-
-   
-
- 
+#features {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
-#dropdown{
-    position:absolute;
-    top: 50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: -20px;
-    width:200px;
-   /* display: grid; */
-    display: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 5px;
+#dropdown {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: -20px;
+  width: 200px;
+  /* display: grid; */
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
 }
-#options{
-    width: 45%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap:30px; */
+#options {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap:30px; */
 }
-.dropdown_item{
-    width: 100%;
-    padding: 15px;
-    list-style-type: none;
-    text-decoration: none;
-   
+.dropdown_item {
+  width: 100%;
+  padding: 15px;
+  list-style-type: none;
+  text-decoration: none;
 }
-.dropdown_item:hover{
-    background-color:rgb(171, 227, 250);
-    border-radius: 5px;
+.dropdown_item:hover {
+  background-color: rgb(171, 227, 250);
+  border-radius: 5px;
 }
-.dropdown_item>a{
-    text-decoration: none;
-    color: rgb(99, 99, 99)
+.dropdown_item > a {
+  text-decoration: none;
+  color: rgb(99, 99, 99);
 }
-#options>a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+#options > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 #op {
-    width: 20%;
-    display: flex;
-    /* gap: 30px; */
-    justify-content: space-between;
+  width: 20%;
+  display: flex;
+  /* gap: 30px; */
+  justify-content: space-between;
 }
-#op>a{
-    text-decoration: none;
-    color: white;
-    display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        font-weight: 100;
+#op > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 100;
 }
-#op>a:last-child{
-    width: 40%;
-    height: 40px;
-    background-color: rgb(75, 175, 214);
-    color: black;
-    font-size: 20px;
+#op > a:last-child {
+  width: 40%;
+  height: 40px;
+  background-color: rgb(75, 175, 214);
+  color: black;
+  font-size: 20px;
 }
-#features:hover>#dropdown {
-   display: grid;
+#features:hover > #dropdown {
+  display: grid;
 }
-#features>h4:hover>span {
-color: skyblue
+#features > h4:hover > span {
+  color: skyblue;
 }
-#options>a:hover{
-color: rgb(89, 171, 204);
+#options > a:hover {
+  color: rgb(89, 171, 204);
 }
-#op>a:hover {
-    color: rgb(89, 171, 204);
+#op > a:hover {
+  color: rgb(89, 171, 204);
 }
-#op>a:last-child:hover {
-color: black;
-background-color: skyblue;
+#op > a:last-child:hover {
+  color: black;
+  background-color: skyblue;
 }
-h4>span{
- font-weight: bold;
- font-size: large;
+h4 > span {
+  font-weight: bold;
+  font-size: large;
 }
-#slide-btn{
-    display: grid;
-    /* grid-template-rows: repeat(3,1fr); */
-width:50px;
-height: 50%;
-/* border: solid red; */
-gap: 5px;
-padding: 5;
-display: none;
-
+#slide-btn {
+  display: grid;
+  /* grid-template-rows: repeat(3,1fr); */
+  width: 50px;
+  height: 50%;
+  /* border: solid red; */
+  gap: 5px;
+  padding: 5;
+  display: none;
 }
-#slide-btn>div{
-    background-color: white;
-    height: 1.5px;
+#slide-btn > div {
+  background-color: white;
+  height: 1.5px;
 }
-#slide-btn:hover>div:nth-child(3){
-    height: 15%;
-    margin-top:7px;
-   
+#slide-btn:hover > div:nth-child(3) {
+  height: 15%;
+  margin-top: 7px;
 }
-#slide-btn:hover>div:nth-child(2) {
-    margin-top: 7px;
-
+#slide-btn:hover > div:nth-child(2) {
+  margin-top: 7px;
 }
- @media all and (min-width:850px) and (max-width:1080px){
-    #logo{
-        width: 10%;
-    }
-    #logo>h1{
-        display: none;
-    }
-    #options{
-        width:60%
-    }
-    #op{
-        width:30%;
-    }
- }
- @media all and (min-width:0px) and (max-width:850px) {
-    #logo {
-            width:60%;
-        }
-
-     
-     #options {
-         width: 30%
-     }
-#options>a{
+@media all and (min-width: 850px) and (max-width: 1080px) {
+  #logo {
+    width: 10%;
+  }
+  #logo > h1 {
     display: none;
+  }
+  #options {
+    width: 60%;
+  }
+  #op {
+    width: 30%;
+  }
 }
-#options>div {
-    display: none;
-}
+@media all and (min-width: 0px) and (max-width: 850px) {
+  #logo {
+    width: 60%;
+  }
 
-     #op {
-         display: none;
-     }
-     
-     
-#slide-btn{
+  #options {
+    width: 30%;
+  }
+  #options > a {
+    display: none;
+  }
+  #options > div {
+    display: none;
+  }
+
+  #op {
+    display: none;
+  }
+
+  #slide-btn {
     display: grid;
     width: 50px;
-        height: 50%;
-        margin-right: 40px;
-        
-        
+    height: 50%;
+    margin-right: 40px;
+  }
 }
- }
- #slide-bar{
-    width: 100%;
-    /* height: 100vh; */
-    position:absolute;
-    background-color: rgb(25, 25, 58);
-    opacity: .90;
-    display: none;
- }
- #options1{
-    width: 100%;
-    position: relative;
-    /* width:300px;
+#slide-bar {
+  width: 100%;
+  /* height: 100vh; */
+  position: absolute;
+  background-color: rgb(25, 25, 58);
+  opacity: 0.9;
+  display: none;
+}
+#options1 {
+  width: 100%;
+  position: relative;
+  /* width:300px;
     height: 500px; */
-    /* border:solid red; */
-    top:300px;
-    margin:1000px 20px; 
-    padding: 20px;
-    display:flex;
-    flex-direction: column;
-
- }
- #options1>a{
-color: white;
- text-decoration: none;
- padding: 10px;
- font-weight: bold;
- font-size: 25px;
-  /* border: 1px solid; */
-
- }
- #options1>div {
-     color: white;
-     text-decoration: none;
-     padding: 10px;
-    font-size: 25px;
-   
-
- }
-
- .dropdown_item1{
-    display: flex;
-    position: none;
-
-    list-style-type: none;
- } 
-  .dropdown_item1>a{
-    padding: 5px;
-text-decoration:none;
-color: white;
-font-size: 18px;
-    }
-.dropdown_item1>a:hover{
-    color: rgb(14, 152, 207);
+  /* border:solid red; */
+  top: 300px;
+  margin: 1000px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
-  #options1>a:last-child{
-    color: black;
-    background-color: rgb(6, 192, 209);
-    text-align: center;
-    border-radius: 2px;
-    /* width: 1000px; */
-    justify-content: center;
-  }
-  #options1>a:hover{
-    color:rgb(56, 184, 235)
-  }
-   #options1>:last-child:hover {
-    color: black;
-   }
-  #x{display: flex;
-    position: fixed;
-    width: 100%;
-    font-size: 25px;
-    color: white;
-    justify-content: right;
-    margin-right: 20px;
-    top: 20px;
-    right: 40px;
-    cursor: pointer;
-  }
-  
-  #features1{
-cursor: pointer;
-  }
-  #dropdown1 {
-      display: none;
-  }
-  #features1>h4:hover>span{
-    color:rgb(79, 197, 243)
-  }
- #options>a{
-font-weight: 100;
- }
+#options1 > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  /* border: 1px solid; */
+}
+#options1 > div {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.dropdown_item1 {
+  display: flex;
+  position: none;
+
+  list-style-type: none;
+}
+.dropdown_item1 > a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.dropdown_item1 > a:hover {
+  color: rgb(14, 152, 207);
+}
+#options1 > a:last-child {
+  color: black;
+  background-color: rgb(6, 192, 209);
+  text-align: center;
+  border-radius: 2px;
+  /* width: 1000px; */
+  justify-content: center;
+}
+#options1 > a:hover {
+  color: rgb(56, 184, 235);
+}
+#options1 > :last-child:hover {
+  color: black;
+}
+#x {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  justify-content: right;
+  margin-right: 20px;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+
+#features1 {
+  cursor: pointer;
+}
+#dropdown1 {
+  display: none;
+}
+#features1 > h4:hover > span {
+  color: rgb(79, 197, 243);
+}
+#options > a {
+  font-weight: 100;
+}
