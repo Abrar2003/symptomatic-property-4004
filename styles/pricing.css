@@ -99,10 +99,8 @@ h3>div{
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
 }
 .cards{
-  position: sticky;
   text-align: center;
   width: 30%;
   background-color: white;

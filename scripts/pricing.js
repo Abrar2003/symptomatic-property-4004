@@ -9,44 +9,69 @@ let range = () => {
   contacts_num.innerText = contacts_value;
   return contacts_value;
 };
-let contacts_value=0;
-document.querySelector('#range').addEventListener('input', ()=>{
+let contacts_value = 0;
+document.querySelector("#range").addEventListener("input", () => {
   contacts_value = range();
   prices();
 });
 
-let prices = ()=>{
-  let basic = document.getElementById('basic');
-  let unlimited = document.getElementById('unlimited');
-  let premier = document.getElementById('premier');
-  if(contacts_value>15000 && contacts_value<25000){
+let basic_price = 0;
+let unlimited_price = 0;
+let premier_price = 0;
+
+let prices = () => {
+  let basic = document.getElementById("basic");
+  let unlimited = document.getElementById("unlimited");
+  let premier = document.getElementById("premier");
+  if (contacts_value < 15000) {
     basic.innerHTML = null;
-    basic.innerHTML = '199<span>/month</span>';
+    basic.innerHTML = "9<span>/month</span>";
     unlimited.innerHTML = null;
-    unlimited.innerHTML = '399<span>/month</span>';
+    unlimited.innerHTML = "29<span>/month</span>";
     premier.innerHTML = null;
-    premier.innerHTML = '499<span>/month</span>';
-    localStorage.setItem('basic-plan', 199);
-    localStorage.setItem('unlimited-plan', 399);
-    localStorage.setItem('premier-plan', 499);
-  }else if(contacts_value>25000){
+    premier.innerHTML = "149<span>/month</span>";
+    basic_price = 9;
+    unlimited_price = 29;
+    premier_price = 149;
+  } else if (contacts_value > 15000 && contacts_value < 25000) {
     basic.innerHTML = null;
-    basic.innerHTML = '299<span>/month</span>';
+    basic.innerHTML = "129<span>/month</span>";
     unlimited.innerHTML = null;
-    unlimited.innerHTML = '699<span>/month</span>';
+    unlimited.innerHTML = "399<span>/month</span>";
     premier.innerHTML = null;
-    premier.innerHTML = '989<span>/month</span>';
-    localStorage.setItem('basic-plan', 299);
-    localStorage.setItem('unlimited-plan', 699);
-    localStorage.setItem('premier-plan', 989);
+    premier.innerHTML = "499<span>/month</span>";
+    basic_price = 129;
+    unlimited_price = 399;
+    premier_price = 499;
+  } else if (contacts_value > 25000) {
+    basic.innerHTML = null;
+    basic.innerHTML = "299<span>/month</span>";
+    unlimited.innerHTML = null;
+    unlimited.innerHTML = "699<span>/month</span>";
+    premier.innerHTML = null;
+    premier.innerHTML = "989<span>/month</span>";
+    basic_price = 299;
+    unlimited_price = 699;
+    premier_price = 989;
   }
-}
+};
 
 //ADD THE PAYMENT PAGE LOCATION IN THE "#";
 
-let payment = ()=>{
-  window.location.href = '#';
+let basicPlan = ()=>{
+  localStorage.setItem('plan-price', basic_price);
+  window.location.href = "#";
 }
 
-let buttons = document.getElementsByClassName('buttons');
-buttons.addEventListener('click', payment)
+let unlimitedPlan = ()=>{
+  localStorage.setItem('plan-price', unlimited_price);
+  window.location.href = "#";
+}
+let premierPlan = ()=>{
+  localStorage.setItem('plan-price', premier_price);
+  window.location.href = "#";
+}
+prices();
+document.querySelector('#basic_plan>div:last-child').addEventListener('click', basicPlan);
+document.querySelector('#unlimited_plan>div:last-child').addEventListener('click', unlimitedPlan);
+document.querySelector('#premier_plan>div:last-child').addEventListener('click', premierPlan);
