@@ -10,6 +10,8 @@ let payCardinfo=()=>{
 Add_card.style.display="none"
 pay_card.style.display="block"
 body.style.backgroundColor="rgba(214, 199, 199, 0.689)"
+let pay_card_num=document.getElementById("pay_card_number_m")
+pay_card_num.focus()
 
 }
 
@@ -78,8 +80,10 @@ let BankCard=(CarrDEtails)=>{
         num.innerText=el.Number
         console.log('el.Number:', el.Number)
         let bank=document.createElement("p")
-        bank.innerText="State Bank Of India"
-        div.append(checkbox,num,bank)
+        bank.innerText=el.Bank
+        let name=document.createElement("h5")
+        name.innerText=`(${el.Name})`
+        div.append(checkbox,num,bank,name)
         BankDetail.append(div)
        
     })
@@ -139,7 +143,8 @@ let verifyOtp = ()=>{
 let genrateOtp = ()=>{
     
    alert(`Your one time password is ${otp}`)
-
+   let first_input = document.getElementById("first_input")
+   first_input.focus()
     let verifyOtpForm = document.getElementById('verifyOtpForm'); 
     verifyOtpForm.addEventListener('submit',verifyOtp);
     
@@ -150,24 +155,41 @@ let StartPlans=document.getElementById("pay-start-plan").addEventListener("click
 
     setTimeout(function(){
         genrateOtp()
+
     },1500)
     pay_otp.style.display="block"
     body.style.backgroundColor="rgba(214, 199, 199, 0.689)"  
 }
 )
 
+let moveNext = document.getElementsByClassName('pass')
+Array.from(moveNext).forEach((el)=>{
+  el.addEventListener("keyup",(event)=> {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13 || el.value.length == 1) {
+      // Focus on the next sibling
+      el.nextElementSibling.focus()
+    }
+  })
+})
+
+
+
+
 //<-----------------------------------Payment Counter----------------------------------------------------->
 
 let payoffer_1=document.getElementById("pay-offer-1")
 let payoffer_2=document.getElementById("pay-offer-2")
+let payoffer_3=document.getElementById("pay-offer-3")
 
 function secCounter(){
-    let count=4;
+    let count=3;
     {
      let id=setInterval(function(){
             if(count===0){
                 alert("Oop's sorry Offer ended ")
                 clearInterval(id);
+                window.location="payment.html"
                 
             }
 
@@ -194,17 +216,35 @@ function minCounter(){
     }    
 }
 minCounter()
+function msecCounter(){
+    let count=9;
+    {
+     let id=setInterval(function(){
+            if(count===0){
+                clearInterval(id);
+                msecCounter()
+            }
+
+            payoffer_3.innerText=`${count} ms`
+            
+            count--
+        },100);
+    }    
+}
+msecCounter()
 
 //<---------------------------Amount Deduction And Append------------------------------->
 
 let last_amount=document.getElementById("last_amount")
 let pay_amount=document.getElementById("pay-amount")
+let offer = Math.floor(Math.random()*50);
+console.log('offer:', offer)
+let pay_discount=document.querySelector(".pay-discount")
+let payAmount=40
 
-let payAmount=10
+pay_amount.innerText=`${payAmount} $`
 
-pay_amount.innerText=payAmount
+let total=payAmount*offer/100
 
-let total=payAmount-(payAmount/2)
-
-last_amount.innerText=`${total} $ `
-
+last_amount.innerText=`${payAmount-total} $ `
+pay_discount.innerText=`${total} % discount applied`
