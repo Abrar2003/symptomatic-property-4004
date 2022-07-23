@@ -1,3 +1,9 @@
+// import { navjs} from "../components/navbar.js"
+// // import{footer} from "../components/footer.js"
+// // console.log("hello")
+// document.getElementById("navbar").innerHTML = navjs();
+
+
 let side_1=document.querySelector(".side-1")
 let side_2=document.querySelector(".side-2")
 let side_3=document.querySelector(".side-3")

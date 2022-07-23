@@ -133,7 +133,7 @@ let navbar = () => {
                 <a class="cmds-site-navigation__link"
                         href="#" title="Campaigns"><span>Campaigns</span></a>
                <a class="cmds-site-navigation__link"
-                        href="#" title="Automation"><span>Automation</span></a>
+                        href="automation.html" title="Automation"><span>Automation</span></a>
                <a class="cmds-site-navigation__link"
                         href="#"
                         title="Transactional"><span>Transactional</span></a>
