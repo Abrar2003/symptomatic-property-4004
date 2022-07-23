@@ -1,18 +1,20 @@
+
+
+  let login = localStorage.getItem('log') || false;
+    login = true;
 let navbar = () => {
-    let login = localStorage.getItem('log') || false;
+
   if(login==false)  {
       return `
 <div id="navbar1">
       <div id="logo">
-      <a href="index.html">
                 <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt=""/>
-                <p>Campaing Monitor</p>
-                </a>
+                <h1>Campaing Monitor</h1>
             </div>
 
             <div id="options">
                 <div href="#" id="features" class="primary-nav-link" role="menuitem" aria-label="Features">
-                    <h3 id="see">Features <span>^</span></h3>
+                    <h4 id="see">Features <span>^</span></h4>
                     <div id="dropdown">
                         <li class="dropdown_item">
                             <a href="">Features Overview</a>
@@ -50,24 +52,24 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="pricing-page.html">Pricing</a>
+                <a href="#">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="gallary.html"> Gallery</a>
+                <a href="#"> Gallery</a>
                 <a href="#">Agencies</a>
             </div>
             <div id="op">
                 <a href="#">Contact Us</a>
-                <a href="login.html">Log in</a>
-                <a href="signup.html">Try it free</a>
+                <a href="./login.html">Log in</a>
+                <a href="./signup.html">Try it free</a>
             </div>
             <div id="slide-btn">
                 <div></div>
                 <div></div>
                 <div></div> 
             </div>
-        <div id="slide-bar">
-            <div id="options1">
+            <div id="slide-bar">
+                   <div id="options1">
                     <div id="x">X</div>
                 <div href="#" id="features1" id="primary" role="menuitem" aria-label="Features">
                    
@@ -110,15 +112,15 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="pricing-page.html">Pricing</a>
+                <a href="./pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="gallary.html"> Gallery</a>
+                <a href="./gallary.html"> Gallery</a>
                 <a href="#">Agencies</a>
                 <a href="#"> Customers</a>
                 <a href="#">Support</a>
                 <a href="#">Sales</a>
-                <a href="signup.html">Try  it free</a>
+                <a href="./signup.html">Try  it free</a>
             </div>
         </div>
         </div>`}
@@ -128,11 +130,11 @@ let navbar = () => {
                     <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt="">
                 </a>
                <a class="cmds-site-navigation__link"
-                        href="overview.html" title="Overview"><span>Overview</span></a>
+                        href="./overview.html" title="Overview"><span>Overview</span></a>
                 <a class="cmds-site-navigation__link"
-                        href="campaign.html" title="Campaigns"><span>Campaigns</span></a>
+                        href="#" title="Campaigns"><span>Campaigns</span></a>
                <a class="cmds-site-navigation__link"
-                        href="automation.html" title="Automation"><span>Automation</span></a>
+                        href="#" title="Automation"><span>Automation</span></a>
                <a class="cmds-site-navigation__link"
                         href="#"
                         title="Transactional"><span>Transactional</span></a>
@@ -148,14 +150,14 @@ let navbar = () => {
         <nav aria-label="MyAccount navigation" id="acc">
             
                 <l><a class="cmds-header__pill"
-                        href="pricing-page.html">View Plans</a>
+                        href="./pricing-page.html">View Plans</a>
                 </l>
                <l>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscSc9C-eNLyH-rVg7077mcQcrfXIDjAd_XQ&usqp=CAU" alt="">
                </l>
                <l>
                 <!-- <div> -->
-                <h3 id="usename"></h3>
+                <h3 id="username"></h3>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWKm9ewt97xp3BtV-wo8DBVXYt_7l92MZ4Q&usqp=CAU" alt="">
                     <!-- </div> -->
                     <!-- <div></div>
@@ -168,14 +170,25 @@ let navbar = () => {
         </nav>
     </div>`}
 }
- function navjs() {
+if(login!==false){namefun()}
+function namefun() {
+   
+    setTimeout(() => { 
+        let nameo = JSON.parse(localStorage.getItem('user'))||"";
+    let name =nameo.name||""
+    // name="Pratyay"
+        document.getElementById("username").innerText = name;
+        
+    },50);
+}
+function navjs() {
     //  document.getElementById('slide-bar').style.display = 'flex'
 // document.getElementById('slide-bar').style.display = 'flex'
      let slideBar = document.getElementById('slide-btn').addEventListener('click', sld)
-    //  return slideBar
+     return slideBar
 }
 function sld() { 
-     document.getElementById('slide-bar').style.display = 'flex', slideBar = document.getElementById('slide-btn').style.display = 'none';
+    return document.getElementById('slide-bar').style.display = 'flex', slideBar = document.getElementById('slide-btn').style.display = 'none';
 }
 function cross() {
     // let slideBarr = document.getElementById('x').addEventListener('click', sld2)
@@ -196,9 +209,10 @@ function features() {
     
     return dro
 }
-
+// namefun()
 function drop() {
      if(document.getElementById('dropdown1').style.display =='none'){return document.getElementById('dropdown1').style.display = 'grid',document.getElementById('options1').style.top = '480'
 }else {return document.getElementById('dropdown1').style.display="none",document.getElementById('options1').style.top = '300'}
 }
-export  {navbar,navjs,cross,features}
+
+export  {navbar,navjs,cross,features,}
