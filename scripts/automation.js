@@ -1,3 +1,9 @@
+import { navbar, navjs, cross, features } from "../components/navbar.js"
+
+document.getElementById("navbar").innerHTML = navbar();
+navjs()
+cross()
+features()
 let side_1=document.querySelector(".side-1")
 let side_2=document.querySelector(".side-2")
 let side_3=document.querySelector(".side-3")

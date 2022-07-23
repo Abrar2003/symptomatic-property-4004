@@ -1,6 +1,5 @@
 let navbar = () => {
     let login = localStorage.getItem('log') || false;
-    login = true;
   if(login==false)  {
       return `
 <div id="navbar1">
@@ -54,13 +53,13 @@ let navbar = () => {
                 <a href="pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="#"> Gallery</a>
+                <a href="gallary.html"> Gallery</a>
                 <a href="#">Agencies</a>
             </div>
             <div id="op">
                 <a href="#">Contact Us</a>
-                <a href="#">Log in</a>
-                <a href="#">Try it free</a>
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Try it free</a>
             </div>
             <div id="slide-btn">
                 <div></div>
@@ -111,15 +110,15 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="#">Pricing</a>
+                <a href="pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="#"> Gallery</a>
+                <a href="gallary.html"> Gallery</a>
                 <a href="#">Agencies</a>
                 <a href="#"> Customers</a>
                 <a href="#">Support</a>
                 <a href="#">Sales</a>
-                <a href="#">Try  it free</a>
+                <a href="signup.html">Try  it free</a>
             </div>
         </div>
         </div>`}
@@ -129,11 +128,11 @@ let navbar = () => {
                     <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt="">
                 </a>
                <a class="cmds-site-navigation__link"
-                        href="#" title="Overview"><span>Overview</span></a>
+                        href="overview.html" title="Overview"><span>Overview</span></a>
                 <a class="cmds-site-navigation__link"
-                        href="#" title="Campaigns"><span>Campaigns</span></a>
+                        href="campaign.html" title="Campaigns"><span>Campaigns</span></a>
                <a class="cmds-site-navigation__link"
-                        href="#" title="Automation"><span>Automation</span></a>
+                        href="automation.html" title="Automation"><span>Automation</span></a>
                <a class="cmds-site-navigation__link"
                         href="#"
                         title="Transactional"><span>Transactional</span></a>
@@ -149,7 +148,7 @@ let navbar = () => {
         <nav aria-label="MyAccount navigation" id="acc">
             
                 <l><a class="cmds-header__pill"
-                        href="#">View Plans</a>
+                        href="pricing-page.html">View Plans</a>
                 </l>
                <l>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscSc9C-eNLyH-rVg7077mcQcrfXIDjAd_XQ&usqp=CAU" alt="">
