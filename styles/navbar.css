@@ -40,15 +40,10 @@
 #logo>a>img{
     width:35px;
 }
-#features{
-   
+#features{ 
     display: flex;
     flex-direction: column;
     cursor: pointer;
-
-   
-
- 
 }
 #dropdown{
     position:absolute;
@@ -69,7 +64,7 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     /* gap:30px; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .dropdown_item{
     width: 100%;
