@@ -107,7 +107,7 @@ let serverConnecting =()=>{
     setTimeout(function(){
 
         alert("congratualation Plan Activate succesfully")
-        window.location.href="payment.html"
+        window.location.href="index.html"
 
     },3000)
     pay_otp.style.display="none"
@@ -130,10 +130,8 @@ function secCounter(){
             if(count===0){
                 alert("Oop's sorry Offer ended ")
                 clearInterval(id);
-                window.location="payment.html"
-                
+                window.location="payment.html"               
             }
-
             payoffer_1.innerText=`offer exprires in ${count} m  `
             
             count--
