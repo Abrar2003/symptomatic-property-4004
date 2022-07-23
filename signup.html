@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up | campaign moniter</title>
+    <style>
+        div{
+            width: 20%;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+        }
+        ::placeholder{
+            font-size: 16px;
+            font-style: italic;
+        }
+        label{
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+        <form>
+            <input type="text" name="" id="name" placeholder="Full name">
+            <input type="text" name="" id="company" placeholder="Company name">
+            <input type="text" name="" id="email" placeholder="Email">
+            <input type="password" name="" id="password" placeholder="Password" minlength="8" maxlength="256">
+            <label>between 8 to 256 characters</label>
+            <input type="submit" name="" id="submit" value="Create my account">
+        </form>
+        <p>
+            To find out more about how we're using the information you're giving us, please review our privacy statement.
+        </p>
+    </div>
+    <p>Already have an account? <a href="login.html">Login</a>.</p>
+    <p>By signing up, you agree to our<a href="">Terms of Use</a> and <a href="">Anti-spam Policy</a>.</p>
 </body>
 </html>
+
+<script src="./scripts/signup.js"></script>
