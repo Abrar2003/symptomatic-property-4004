@@ -5,13 +5,15 @@ let navbar = () => {
       return `
 <div id="navbar1">
       <div id="logo">
+      <a href="index.html">
                 <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt=""/>
-                <h1>Campaing Monitor</h1>
+                <p>Campaing Monitor</p>
+                </a>
             </div>
 
             <div id="options">
                 <div href="#" id="features" class="primary-nav-link" role="menuitem" aria-label="Features">
-                    <h4 id="see">Features <span>^</span></h4>
+                    <h3 id="see">Features <span>^</span></h3>
                     <div id="dropdown">
                         <li class="dropdown_item">
                             <a href="">Features Overview</a>
@@ -49,7 +51,7 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="#">Pricing</a>
+                <a href="pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
                 <a href="#"> Gallery</a>
@@ -65,8 +67,8 @@ let navbar = () => {
                 <div></div>
                 <div></div> 
             </div>
-            <div id="slide-bar">
-                   <div id="options1">
+        <div id="slide-bar">
+            <div id="options1">
                     <div id="x">X</div>
                 <div href="#" id="features1" id="primary" role="menuitem" aria-label="Features">
                    
@@ -171,10 +173,10 @@ let navbar = () => {
     //  document.getElementById('slide-bar').style.display = 'flex'
 // document.getElementById('slide-bar').style.display = 'flex'
      let slideBar = document.getElementById('slide-btn').addEventListener('click', sld)
-     return slideBar
+    //  return slideBar
 }
 function sld() { 
-    return document.getElementById('slide-bar').style.display = 'flex', slideBar = document.getElementById('slide-btn').style.display = 'none';
+     document.getElementById('slide-bar').style.display = 'flex', slideBar = document.getElementById('slide-btn').style.display = 'none';
 }
 function cross() {
     // let slideBarr = document.getElementById('x').addEventListener('click', sld2)

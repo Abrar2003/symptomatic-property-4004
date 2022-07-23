@@ -1,0 +1,252 @@
+#head-pricing {
+  padding: 0% 25%;
+  margin: 20px auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#head-pricing > h1 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+#head-pricing p {
+  font-size: 17px;
+  color: #aba3a3;
+}
+#slider {
+  width: 100%;
+  margin-bottom: 100px;
+}
+#range {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+#range:hover {
+  opacity: 1;
+}
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #7856ff;
+  cursor: pointer;
+}
+#range::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #7856ff;
+  cursor: pointer;
+}
+#buttons {
+  width: 60%;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+}
+#buttons > button:first-child {
+  width: 45%;
+  height: 50px;
+  background-color: #7856ff;
+  color: white;
+  font-size: 15px;
+  border: none;
+  font-weight: 500;
+}
+#buttons > button:last-child {
+  width: 45%;
+  height: 50px;
+  color: black;
+  background-color: #51cfdb;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+#slider h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+h3 > div {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7856ff;
+  color: white;
+  margin: auto 8px;
+}
+#slider label {
+  color: #7856ff;
+  font-weight: 500;
+}
+#prices {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards {
+  text-align: center;
+  width: 30%;
+  background-color: white;
+  padding: 0% 5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.title {
+  color: #7856ff;
+}
+.price > p {
+  font-size: 14px;
+  color: #aba3a3;
+}
+.price > h1 {
+  font-size: 60px;
+  margin: 10px auto;
+}
+.price span {
+  font-size: 15px;
+  color: #9a9393;
+  font-weight: 500;
+}
+.button {
+  width: 100%;
+  height: 45px;
+  background-color: #7856ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#tables {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.table {
+  width: 95%;
+  margin: auto;
+  appearance: none;
+}
+.table tr {
+  text-decoration: none;
+  box-sizing: none;
+  display: grid;
+  gap: 0px;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  text-align: center;
+  margin: auto;
+}
+.table td {
+  text-decoration: none;
+  appearance: none;
+  border-right: 1px solid #d3d3d3;
+  padding: 15px 0px;
+}
+.table td > img {
+  width: 25px;
+}
+.tooltip {
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.tooltip + .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -30%;
+  /* bottom: -30%; */
+  left: 100%;
+}
+
+.tooltip + .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover + .tooltiptext {
+  visibility: visible;
+}
+#sales-team {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 50px;
+}
+#sales-team > td > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+#sales-team > td:last-child {
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+  background-color: #6ad6e0;
+}
+#tables + p,
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+#FAQ {
+  margin-bottom: 50px;
+}
+#FAQ > h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 150px;
+}
+#FAQ > div {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.faq > p:first-child {
+  font-size: 16px;
+}
+.faq > p:last-child,
+a {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
