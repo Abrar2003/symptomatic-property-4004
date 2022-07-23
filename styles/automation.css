@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .auto-div-1{
+    margin-top: 7%;
     display: flex;
     gap: 53%;
     padding: 2%;

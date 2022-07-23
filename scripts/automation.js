@@ -1,9 +1,4 @@
-import { navbar, navjs, cross, features } from "../components/navbar.js"
 
-document.getElementById("navbar").innerHTML = navbar();
-navjs()
-cross()
-features()
 
 let side_1=document.querySelector(".side-1")
 let side_2=document.querySelector(".side-2")
@@ -56,6 +51,11 @@ let SeachAutomation=()=>{
 
 search.addEventListener("input",SeachAutomation)
 
+import { navbar, navjs, cross, features } from "../components/navbar.js"
 
+document.getElementById("navbar").innerHTML = navbar();
+navjs()
+cross()
+features()
 
 

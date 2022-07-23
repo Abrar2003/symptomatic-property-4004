@@ -1,7 +1,7 @@
 
 
   let login = localStorage.getItem('log') || false;
-    login = true;
+    // login = true;
 let navbar = () => {
 
   if(login==false)  {
@@ -52,16 +52,16 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="#">Pricing</a>
+                <a href="pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="#"> Gallery</a>
+                <a href="gallary.html"> Gallery</a>
                 <a href="#">Agencies</a>
             </div>
             <div id="op">
                 <a href="#">Contact Us</a>
-                <a href="./login.html">Log in</a>
-                <a href="./signup.html">Try it free</a>
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Try it free</a>
             </div>
             <div id="slide-btn">
                 <div></div>
@@ -134,7 +134,7 @@ let navbar = () => {
                 <a class="cmds-site-navigation__link"
                         href="#" title="Campaigns"><span>Campaigns</span></a>
                <a class="cmds-site-navigation__link"
-                        href="#" title="Automation"><span>Automation</span></a>
+                        href="automation.html" title="Automation"><span>Automation</span></a>
                <a class="cmds-site-navigation__link"
                         href="#"
                         title="Transactional"><span>Transactional</span></a>
