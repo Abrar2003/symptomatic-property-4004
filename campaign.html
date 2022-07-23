@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automations | Campaign Monitor</title>
-    <link rel="stylesheet" href="./styles/automation.css">
+    <title>Campaigns | Campaign Monitor</title>
+    <link rel="stylesheet" href="./styles/campaign.css">
+    <link rel="stylesheet" href="./styles/nafv2.css">
 </head>
 <body>
-   <div class="auto-div-1">
-    <h1>Automation</h1>
-    <button>Create an automation</button>
-   </div>
-   <div class="auto-div-2">
-    <div class="auto-sidebar-div">
-        <p class="side-1">All</p>
-        <p class="side-2">Journey</p>
-        <p class="side-3">RSS wokflows</p>
+    <div id="navbar"></div>
+  <div id="head">
+    <h1>Campaigns</h1>
+    <button>Create a campaign</button>
+  </div>
+  <div id="main">
+    <div id="sidebar">
+        <h4>View by</h4>
+        <p id="side1">Overview</p>
+        <p id="side2">Drafts</p>
+        <p id="side3">Sent</p>
+        <p id="side4">Deleted</p>
     </div>
-    <div class="auto-search-div">
-        <input type="text" id="auto-search" placeholder="Search automation">
-        <div class="serach-msg">
-            <div id="search-1-msg">
-                <h4 class="msg-h4">You haven't create any automation</h4>
-                <p class="msg-p">Once you create automation, they will appear here</p>
-            </div>   
+    <div id="box">
+        <div id="searchbar-div">
+            <input type="text" name="" id="search">
+            <select name="" id="select">
+                <option value="Overview">All campaigns</option>
+                <option value="Darfts">Drafts campaigns</option>
+                <option value="Sent">Sent campaigns</option>
+                <option value="Deleted">Deleted campaigns</option>
+            </select>
+            <div id="tag">
+                <img src="https://cdn.iconscout.com/icon/free/png-64/tag-3603867-3005659.png" alt="">
+                <p>Any Tags</p>
+            </div>
+        </div>
+        <div id="container">
+            <h4>You haven’t created any emails</h4>
+            <p>Once you create campaigns they will appear here</p>
         </div>
     </div>
-   </div> 
+  </div>
 </body>
 </html>
-<script src="./scripts/automation.js"></script>
+<script src="./scripts/campaign.js" type="module"></script>
