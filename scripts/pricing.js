@@ -1,6 +1,6 @@
 import { navbar, navjs, cross, features } from "../components/navbar.js";
 import {footer} from "../components/footer.js";
-document.getElementById("navbar1").innerHTML = navbar();
+document.getElementById("navbar").innerHTML = navbar();
 navjs();
 cross();
 features();
@@ -63,16 +63,16 @@ let prices = () => {
 
 let basicPlan = ()=>{
   localStorage.setItem('plan-price', basic_price);
-  window.location.href = "#";
+  window.location.href = "./payment.html";
 }
 
 let unlimitedPlan = ()=>{
   localStorage.setItem('plan-price', unlimited_price);
-  window.location.href = "#";
+  window.location.href = "./payment.html";
 }
 let premierPlan = ()=>{
   localStorage.setItem('plan-price', premier_price);
-  window.location.href = "#";
+  window.location.href = "./payment.html";
 }
 prices();
 document.querySelector('#basic_plan>div:last-child').addEventListener('click', basicPlan);

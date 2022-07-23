@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
+=======
+#navbar{
+    /* position: sticky; */
+>>>>>>> 4dee7a399410f8561c502982e7caef8e84c548ed
 }
 
 #nav2{
+    width: 100%;
     height: 60px;
     background-color: #171a33;
     padding-left: 20px;
@@ -13,6 +19,8 @@
         /* align-items: center; */
         /* flex-direction: column; */
         justify-content: space-between;
+        position: fixed;
+        top: 0;
 }
 #main-nav2{
     height: 100%;
@@ -110,8 +118,8 @@
     font-size: 15px;
         font-weight: 100;
 }
-#helll{
-    /* background-color: red;
+/* #helll{
+    background-color: red;
     height: 500px;
-    margin-top: 30px; */
-}
+    margin-top: 30px;
+} */
