@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./styles/login.css">
-</head>
-<body>
-    <form>
-        <input type="text" name="" id="email" placeholder="Email">
-        <input type="password" name="" id="password" placeholder="Password">
-        <input type="submit" name="" id="submit" value="Log in">
-    </form>
-</body>
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <div id="left">
+        <div id="logo">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-64/campaign-36-286039.png"
+            alt=""
+          />
+          <h3>Campaign Moniter</h3>
+        </div>
+        <div id="pages">
+          <div class="pages">
+            <a href="#">FEATURES</a>
+          </div>
+          <div class="pages">
+            <a href="#">PRICING</a>
+          </div>
+          <div class="pages">
+            <a href="#">RESOURCES</a>
+          </div>
+          <div class="pages">
+            <a href="#">CUSTOMERS</a>
+          </div>
+          <div class="pages">
+            <a href="#">GALLERY</a>
+          </div>
+          <div class="pages">
+            <a href="#">AGENCIES</a>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div class="pages">
+          <p>CONTACT US</p>
+        </div>
+        <div class="pages">
+          <a href="login.html">LOG IN</a>
+        </div>
+        <div id="signup">
+          <a href="signup.html">SIGN UP</a>
+        </div>
+      </div>
+    </div>
+    <h1>Log In</h1>
+    <div id="form">
+      <form>
+        <label for="">Name</label>
+        <input type="text" name="" id="email" placeholder="Email" />
+        <label for="">Password</label>
+        <input type="password" name="" id="password" placeholder="Password" />
+        <input type="submit" name="" id="submit" value="Log in" />
+      </form>
+      <p class="ul">Can't remember your password?</p>
+    </div>
+    <div id="bottom">
+      <h2 class="ul">
+        <a href="signup.html">CREATE A FREE ACCOUNT</a>
+      </h2>
+      <p>
+        Sign up for a free account, and start sending campaigns for as little
+        as $9/month.
+      </p>
+    </div>
+  </body>
 </html>
 <script src="./scripts/login.js"></script>
