@@ -7,7 +7,7 @@ let navbar = () => {
   if(login==false)  {
       return `
 <div id="navbar1">
-      <div id="logo">
+    <div id="logo">
                 <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt=""/>
                 <h1>Campaing Monitor</h1>
             </div>
@@ -126,7 +126,7 @@ let navbar = () => {
         </div>`}
     else{return ` <div id="nav2">
             <div  id="main-nav2">
-               <a aria-label="home" class="cmds-header-direct-logo" href="#">
+               <a aria-label="home" class="cmds-header-direct-logo" href="./overview.html">
                     <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/069606d3-94ab-4d43-8e87-7ebcb8e57923.png?auto=format&size=50" alt="">
                 </a>
                <a class="cmds-site-navigation__link"
@@ -196,7 +196,8 @@ function navjs() {
     //  document.getElementById('slide-bar').style.display = 'flex'
 // document.getElementById('slide-bar').style.display = 'flex'
      let slideBar = document.getElementById('slide-btn').addEventListener('click', sld)
-     return slideBar
+    return slideBar,document.getElementById('navbar1').addEventListener('click',()=>{window.location.href="./index.html"})
+    
 }
 function sld() { 
     return document.getElementById('slide-bar').style.display = 'flex', slideBar = document.getElementById('slide-btn').style.display = 'none';
