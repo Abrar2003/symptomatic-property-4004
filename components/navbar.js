@@ -1,6 +1,7 @@
 
 
   let login = localStorage.getItem('log') || false;
+
 let navbar = () => {
 
   if(login==false)  {
@@ -51,16 +52,16 @@ let navbar = () => {
                         </li>
                     </div>
                 </div>
-                <a href="#">Pricing</a>
+                <a href="pricing-page.html">Pricing</a>
                 <a href="#">Resources</a>
                 <a href="#"> Customers</a>
-                <a href="#"> Gallery</a>
+                <a href="gallary.html"> Gallery</a>
                 <a href="#">Agencies</a>
             </div>
             <div id="op">
                 <a href="#">Contact Us</a>
-                <a href="./login.html">Log in</a>
-                <a href="./signup.html">Try it free</a>
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Try it free</a>
             </div>
             <div id="slide-btn">
                 <div></div>
@@ -133,7 +134,7 @@ let navbar = () => {
                 <a class="cmds-site-navigation__link"
                         href="#" title="Campaigns"><span>Campaigns</span></a>
                <a class="cmds-site-navigation__link"
-                        href="#" title="Automation"><span>Automation</span></a>
+                        href="automation.html" title="Automation"><span>Automation</span></a>
                <a class="cmds-site-navigation__link"
                         href="#"
                         title="Transactional"><span>Transactional</span></a>
@@ -154,20 +155,30 @@ let navbar = () => {
                <l>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscSc9C-eNLyH-rVg7077mcQcrfXIDjAd_XQ&usqp=CAU" alt="">
                </l>
-               <l>
-                <!-- <div> -->
+               <l id="acc-nav">
+                 
                 <h3 id="username"></h3>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWKm9ewt97xp3BtV-wo8DBVXYt_7l92MZ4Q&usqp=CAU" alt="">
-                    <!-- </div> -->
-                    <!-- <div></div>
-                    <div></div> -->
+                    
             </l>
                    
                     </div>
                
             
         </nav>
-    </div>`}
+    </div>
+ <div id="pro-drop">
+      <a href="">Account settings</a>
+       <a href="">Billing</a>
+        <a href="">Manage team</a>
+        <hr>
+         <a href="">Integrations</a>
+          <a href="">My templates</a>
+          <hr>
+           <a href="">Help</a>
+            <a id="out">Log out</a>
+    </div>
+    `}
 }
 if(login!==false){namefun()}
 function namefun() {
@@ -178,7 +189,8 @@ function namefun() {
     // name="Pratyay"
         document.getElementById("username").innerText = name;
         
-    },50);
+    }, 50);
+    
 }
 function navjs() {
     //  document.getElementById('slide-bar').style.display = 'flex'
@@ -213,5 +225,18 @@ function drop() {
      if(document.getElementById('dropdown1').style.display =='none'){return document.getElementById('dropdown1').style.display = 'grid',document.getElementById('options1').style.top = '480'
 }else {return document.getElementById('dropdown1').style.display="none",document.getElementById('options1').style.top = '300'}
 }
-
-export  {navbar,navjs,cross,features,}
+function nav2js() {
+    return document.getElementById('out').addEventListener('click', () => { logout() }),document.getElementById('acc-nav').addEventListener('click', () => { prodropfun() })
+    
+}
+function logout() { 
+    localStorage.removeItem("user")
+    localStorage.removeItem("log")
+    window.location.href="./index.html"
+}
+function prodropfun() { 
+    let disprop = document.getElementById("pro-drop").style.display
+    if (document.getElementById("pro-drop").style.display== "none"){document.getElementById("pro-drop").style.display="grid"}
+    else{document.getElementById("pro-drop").style.display = "none"}
+}
+export { navbar, navjs, cross, features,nav2js}

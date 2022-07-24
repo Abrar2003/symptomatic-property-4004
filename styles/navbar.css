@@ -24,21 +24,17 @@
     background-color: #111324;
     display: none;
 }
-#logo{
-    width: 25%;
-}
-#logo>a{
-    width: 80%;
+#logo{width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
+    font-size: 10px;
+   
 }
-
-#logo>a>img{
+#logo>img{
     width:35px;
+    height: 35px;
+    
 }
 #features{ 
     display: flex;
