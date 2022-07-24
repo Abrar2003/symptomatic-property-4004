@@ -38,6 +38,10 @@ body{
     flex-direction: column;
     margin-right: 80px;
 }
+#sidebar>p:hover{
+    color: #00A8E1;
+    cursor: pointer;
+}
 #box{
     width: 90%;
 }

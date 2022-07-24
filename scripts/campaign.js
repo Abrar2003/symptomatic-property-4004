@@ -1,8 +1,8 @@
 import { navbar, navjs, cross, features } from "../components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
-navjs();
-cross();
-features();
+// navjs();
+// cross();
+// features();
 
 let side_1 = document.querySelector("#side1")
 let side_2 = document.querySelector("#side2")
@@ -23,7 +23,7 @@ let overview=()=>{
     side_3.style.color="#434D5D"
     side_4.style.color="#434D5D"
     select.value = 'All campaigns'
-    h4.innerHTML="You haven't create any automation"
+    h4.innerHTML="You haven't create any email"
     p.innerHTML="Once you create automation, they will appear here"
 
 }
