@@ -51,11 +51,11 @@ let SeachAutomation=()=>{
 
 search.addEventListener("input",SeachAutomation)
 
-import { navbar, navjs, cross, features } from "../components/navbar.js"
+import { navbar, nav2js } from "../components/navbar.js"
 
 document.getElementById("navbar").innerHTML = navbar();
-navjs()
-cross()
-features()
-
+// navjs()
+// cross()
+// features()
+nav2js();
 
