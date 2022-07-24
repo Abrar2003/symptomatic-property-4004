@@ -11,9 +11,6 @@
     display: none;
 
 }
-.blank{
-    margin-top: 5%;
-}
 .intro-div{
     margin-bottom: 3%;
     padding: 6%;
@@ -110,6 +107,7 @@
     top:0;
     width:100%;
     z-index:100;
+    
 
 }
 #gallary-main-div-1{

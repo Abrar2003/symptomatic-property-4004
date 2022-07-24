@@ -1,9 +1,5 @@
-import { navbar, navjs, cross, features } from "../components/navbar.js"
 
-document.getElementById("navbar").innerHTML = navbar();
-navjs()
-cross()
-features()
+
 let side_1=document.querySelector(".side-1")
 let side_2=document.querySelector(".side-2")
 let side_3=document.querySelector(".side-3")
@@ -12,10 +8,6 @@ let search_1_msg=document.getElementById("search-1-msg")
 let serach_msg=document.querySelector(".serach-msg")
 let h4=document.querySelector(".msg-h4")
 let p=document.querySelector(".msg-p")
-// <!-- <h4>Sorry, no automations match this search term</h4>
-//             <p>Try a different search term</p> -->
-{/* <h4 class="msg-h4">You haven't create any automation</h4> */}
-{/* <p class="msg-p">Once you create automation, they will appear here</p> */}
 
 let resultAllauto=()=>{
     side_1.style.color="#428CF4"
@@ -51,8 +43,6 @@ side_3.addEventListener("click",resultRSSauto)
 
 
 let SeachAutomation=()=>{
-    // serach_msg.append(document.createElement("img").src="https://thumbs.gfycat.com/GrimyEthicalAsianpiedstarling-max-1mb.gif")
-    // search.style.border="1px solid "
     setTimeout(function(){
         h4.innerHTML="Sorry, no automations match this search term"
         p.innerHTML="Try a different search term"
@@ -61,6 +51,11 @@ let SeachAutomation=()=>{
 
 search.addEventListener("input",SeachAutomation)
 
+import { navbar, navjs, cross, features } from "../components/navbar.js"
 
+document.getElementById("navbar").innerHTML = navbar();
+navjs()
+cross()
+features()
 
 

@@ -179,7 +179,12 @@ let pay_amount=document.getElementById("pay-amount")
 let offer = Math.floor(Math.random()*50);
 console.log('offer:', offer)
 let pay_discount=document.querySelector(".pay-discount")
-let payAmount=40
+
+let payAmount= localStorage.getItem('plan-price')
+console.log('payAmount:', payAmount)
+
+
+
 
 pay_amount.innerText=`${payAmount} $`
 
