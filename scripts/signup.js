@@ -44,8 +44,10 @@ let addUser = (event) => {
     return;
   }
   if (flag !== 0) {
+    alert("Sign Up successful!")
     data.push(user);
     localStorage.setItem("userData", JSON.stringify(data));
+    window.location.href="./login.html";
   }
 };
 form.addEventListener("submit", addUser);

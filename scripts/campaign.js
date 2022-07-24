@@ -9,10 +9,9 @@ let side_2 = document.querySelector("#side2")
 let side_3 = document.querySelector("#side3")
 let side_4 = document.querySelector("#side4")
 let search=document.getElementById("search")
-let search_1_msg=document.getElementById("container")
-let serach_msg=document.querySelector(".serach-msg")
-let h4=document.querySelector("#container>h4")
-let p=document.querySelector("#container>p")
+let select = document.querySelector("select");
+let h4=document.querySelector("#h4")
+let p=document.querySelector("#p")
 // <!-- <h4>Sorry, no automations match this search term</h4>
 //             <p>Try a different search term</p> -->
 {/* <h4 class="msg-h4">You haven't create any automation</h4> */}
@@ -23,6 +22,7 @@ let overview=()=>{
     side_2.style.color="#434D5D"
     side_3.style.color="#434D5D"
     side_4.style.color="#434D5D"
+    select.value = 'All campaigns'
     h4.innerHTML="You haven't create any automation"
     p.innerHTML="Once you create automation, they will appear here"
 
@@ -35,6 +35,7 @@ let drafts=()=>{
     side_1.style.color="#434D5D"
     side_3.style.color="#434D5D"
     side_4.style.color="#434D5D"
+    select.value = 'Drafts campaigns'
     h4.innerHTML="You don't have any draft campaigns"
     p.innerHTML="Once you create some draft campaigns they will appear here"
 
@@ -45,6 +46,7 @@ let sent=()=>{
     side_2.style.color="#434D5D"
     side_1.style.color="#434D5D"
     side_4.style.color="#434D5D"
+    select.value = 'Sent campaigns'
     h4.innerHTML="You haven't sent any campaigns"
     p.innerHTML="Once your campaign has been sent it will appear here"
 
@@ -57,6 +59,7 @@ let deleted=()=>{
     side_2.style.color="#434D5D"
     side_1.style.color="#434D5D"
     side_3.style.color="#434D5D"
+    select.value = 'Deleted campaigns'
     h4.innerHTML="You don't have any deleted campaigns"
     p.innerHTML="Once you delete a campaign it will be available here for 30 days"
 

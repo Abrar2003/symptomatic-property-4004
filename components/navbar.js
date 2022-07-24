@@ -1,7 +1,6 @@
 
 
   let login = localStorage.getItem('log') || false;
-    login = true;
 let navbar = () => {
 
   if(login==false)  {
