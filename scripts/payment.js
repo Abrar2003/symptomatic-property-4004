@@ -18,7 +18,7 @@ pay_card_num.focus()
 Add_card.addEventListener("click",payCardinfo)
 
 
-//<----------------------------------------For Addind a Card Details--------------------------------------------------------------------->
+//<----------------------------------------For Addind a Card Details--------------------------------------------------------->
 
 
 let CarrDEtails=JSON.parse(localStorage.getItem("card_details"))||[];
@@ -64,7 +64,7 @@ console.log('CarrDEtails:', CarrDEtails)
 
 payAddCard.addEventListener("click",CardInfoSave)
 
-//<----------------------------Bank Apppend On main page---------------------------------------------------------------------------->
+//<----------------------------------------------------Bank Apppend On main page---------------------------------------------------------------------------->
 
 let BankDetail=document.getElementById("pay-div-bank")
 console.log(CarrDEtails)
@@ -97,7 +97,7 @@ AddCard.addEventListener("click",function(){
 })
 
 
-//<------------------------------------Server Connecting------------------------------------------------------------->
+//<-------------------------------------------------------------------Server Connecting------------------------------------------------------------->
 
 let pay_otp=document.getElementById("pay-otp")
 let server_connecting=document.getElementById("server_connecting")

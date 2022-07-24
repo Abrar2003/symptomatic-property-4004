@@ -1,9 +1,4 @@
-import { navbar, navjs, cross, features } from "../components/navbar.js";
-import {footer} from "../components/footer.js";
-document.getElementById("navbar").innerHTML = navbar();
-navjs();
-cross();
-features();
+
 document.querySelector('#footer').innerHTML = footer();
 
 let range = () => {
@@ -63,18 +58,26 @@ let prices = () => {
 
 let basicPlan = ()=>{
   localStorage.setItem('plan-price', basic_price);
-  window.location.href = "./payment.html";
+  window.location.href = "payment.html";
 }
 
 let unlimitedPlan = ()=>{
   localStorage.setItem('plan-price', unlimited_price);
-  window.location.href = "./payment.html";
+  window.location.href = "payment.html";
 }
 let premierPlan = ()=>{
   localStorage.setItem('plan-price', premier_price);
-  window.location.href = "./payment.html";
+  window.location.href = "payment.html";
 }
 prices();
 document.querySelector('#basic_plan>div:last-child').addEventListener('click', basicPlan);
 document.querySelector('#unlimited_plan>div:last-child').addEventListener('click', unlimitedPlan);
 document.querySelector('#premier_plan>div:last-child').addEventListener('click', premierPlan);
+
+
+import { navbar, navjs, cross, features } from "../components/navbar.js";
+import {footer} from "../components/footer.js";
+document.getElementById("navbar").innerHTML = navbar();
+navjs();
+cross();
+features();

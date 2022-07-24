@@ -1,7 +1,7 @@
 
 
   let login = localStorage.getItem('log') || false;
-    // login = true;
+    login = true;
 let navbar = () => {
 
   if(login==false)  {
@@ -158,10 +158,11 @@ let navbar = () => {
                <l>
                 <!-- <div> -->
                 <h3 id="username"></h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWKm9ewt97xp3BtV-wo8DBVXYt_7l92MZ4Q&usqp=CAU" alt="">
-                    <!-- </div> -->
-                    <!-- <div></div>
-                    <div></div> -->
+                <img id="show-logout" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWKm9ewt97xp3BtV-wo8DBVXYt_7l92MZ4Q&usqp=CAU" alt="">
+                <div id="logout-user">
+                <div>Profile</div>
+                <div id="logout-me">Logout</div>
+            </div>
             </l>
                    
                     </div>
