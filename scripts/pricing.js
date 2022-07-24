@@ -75,9 +75,17 @@ document.querySelector('#unlimited_plan>div:last-child').addEventListener('click
 document.querySelector('#premier_plan>div:last-child').addEventListener('click', premierPlan);
 
 
-import { navbar, navjs, cross, features } from "../components/navbar.js";
+import { navbar, navjs, cross, features, nav2js } from "../components/navbar.js";
 import {footer} from "../components/footer.js";
 document.getElementById("navbar").innerHTML = navbar();
-navjs();
-cross();
-features();
+let log=localStorage.getItem("log")||false;
+if(log==false){
+  navjs();
+  cross();
+  features();
+}else{
+  nav2js()
+}
+
+
+
