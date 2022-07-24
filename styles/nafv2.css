@@ -60,6 +60,7 @@ body{
     color: white;
     gap: 10px;
     justify-content: right;
+    cursor: pointer;
 }
 #acc>l>a{
     display: flex;
