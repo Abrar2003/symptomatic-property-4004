@@ -5,7 +5,7 @@
 <h1 align="center"><a href="https://jade-sawine-5e8a26.netlify.app/" target="_blank"> CampaingMonitor.com</a></h1>
 
 <p>
-Campaign Monitor Web helped us easily create beautiful emails that turned our Bombshell wetsuit into a global phenomenon. build with the six team members And completed the project in just 6 days before the deadline.
+Campaign Monitor Web helped us easily create beautiful emails that turned our Bombshell wetsuit into a global phenomenon. build with the five team members And completed the project in just 6 days before the deadline.
 </p>
 
 <h2 align="left"><i>Tech Stack Use for Creating a CampaingMonitor.com clone</i></h2>
@@ -21,12 +21,8 @@ Campaign Monitor Web helped us easily create beautiful emails that turned our Bo
 
 <h2>Team Members<h2>
 <p>1.Vaibhav Ghawale </p>
-<p>2.Anshul Singla </p>
-<p>3.Amit Kumar</p>
-<p>4.Chandan </p>
-<p>5.Sharun Khan </p>
-<p>6.Malaya Ranjan</p>
-
+<p>2.Abrar Alam </p>
+<p>3.Pranay Chatarberty</p>
 
 <h2>Key Learning From Project</h2>
 <p>Got more Idea about implementing a HTML and CSS.</p>
