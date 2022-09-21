@@ -22,7 +22,7 @@ Campaign Monitor Web helped us easily create beautiful emails that turned our Bo
 <h2>Team Members<h2>
 <p>1.Vaibhav Ghawale </p>
 <p>2.Abrar Alam </p>
-<p>3.Pranay Chatarberty</p>
+<p>3.Pranay Chakraborty</p>
 
 <h2>Key Learning From Project</h2>
 <p>Got more Idea about implementing a HTML and CSS.</p>
