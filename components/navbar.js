@@ -196,7 +196,7 @@ function navjs() {
     //  document.getElementById('slide-bar').style.display = 'flex'
 // document.getElementById('slide-bar').style.display = 'flex'
      let slideBar = document.getElementById('slide-btn').addEventListener('click', sld)
-    return slideBar,document.getElementById('navbar1').addEventListener('click',()=>{window.location.href="./index.html"})
+    return slideBar
     
 }
 function sld() { 
@@ -205,7 +205,7 @@ function sld() {
 function cross() {
     // let slideBarr = document.getElementById('x').addEventListener('click', sld2)
      let slideBarr = document.getElementById('x').addEventListener('click', re)
-    return slideBarr
+    return slideBarr,document.getElementById('logo').addEventListener('click',()=>{window.location.href="./index.html"})
 }
 function re() { 
     return window.location.reload()
