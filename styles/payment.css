@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+#back-home{
+    height: 50px;
+    padding: .1% 3%;
+    background-color: #61962B;
+    border: 0;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    /* box-shadow: 0 9px #999; */
+}
+#back-home:active{
+  background-color:#61962B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
 #pay-card{
     display:none;
     position: absolute;

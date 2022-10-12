@@ -107,7 +107,7 @@ let serverConnecting =()=>{
     setTimeout(function(){
 
         alert("congratualation Plan Activate succesfully")
-        window.location.href="index.html"
+        window.location.href="overview.html"
 
     },3000)
     pay_otp.style.display="none"
@@ -191,7 +191,7 @@ pay_amount.innerText=`${payAmount} $`
 let total=payAmount*offer/100
 
 last_amount.innerText=`${payAmount-total} $ `
-pay_discount.innerText=`${total} % discount applied`
+pay_discount.innerText=`${total}$ discount applied`
 
 
 
@@ -252,6 +252,15 @@ Array.from(moveNext).forEach((el)=>{
       el.nextElementSibling.focus()
     }
   })
+})
+
+
+
+//<-----------------------------------Back to Home------------------------->
+
+
+document.getElementById("back-home").addEventListener("click",function(){
+    window.location.href="overview.html"
 })
 
 
