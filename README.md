@@ -42,6 +42,10 @@ Campaign Monitor Web helped us easily create beautiful emails that turned our Bo
 <h2>Responsibilities<h2>
 <h4>Vaibhav Ghawale </h4>
  <p> Creating a payment page where user can move to final purchasing plan which user selected and connect purchasing page to all payment getway for more effient way user can easily make a order. Make sure After payment user can see the payment process and All for understanding order is placed or not And all functionalities use us Javascript ES6 concept. </p>
+  
+  <img src="https://github.com/Abrar2003/symptomatic-property-4004/blob/main/readmepic/Screenshot%20(2195).png"/>
+<img src="https://github.com/Abrar2003/symptomatic-property-4004/blob/main/readmepic/Screenshot%20(2196).png"/>
+<img src="https://github.com/Abrar2003/symptomatic-property-4004/blob/main/readmepic/Screenshot%20(2197).png"/>
 
   
 <h1 align="center"> <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> Thank You <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> <a href="https://reliable-llama-c038f5.netlify.app/" target="_blank"> </a></h1>
